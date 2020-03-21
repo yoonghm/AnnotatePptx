@@ -11,10 +11,30 @@ You need to have the following to use the prorgram
 
 You can look at [this slides deck](https://github.com/yoonghm/AnnotatePptx/blob/master/TTS.pdf) on the details.
 
+## Usage
+
+```bash
+usage: AnnotatePptx.py [-h] [--gender [GENDER]] [--lang [LANG]]
+                       [--speed [SPEED]]
+                       source_pptx output_pptx
+
+Text to Speech
+
+positional arguments:
+  source_pptx        Input PowerPoint file
+  output_pptx        Output PowerPoint file
+
+optional arguments:
+  -h, --help         show this help message and exit
+  --gender [GENDER]  Gender (default: female)
+  --lang [LANG]      Language (default: en-GB)
+  --speed [SPEED]    Speed (default: 1.0)
+```
+
 ## Example
 
 If all the requirements are meet, you could try out the script with the PowerPoint file in this repo:
 
 ```bash
-python AnnotatePptx.py Zero-to-Python.pptx Zero-to-Python-1.pptx
+python AnnotatePptx.py Zero-to-Python.pptx Zero-to-Python-1.pptx --gender male --lang en-US --speed 0.95
 ```
