@@ -5,7 +5,7 @@ This Python script generates voice annotated PowerPoint slides from embedded spe
 You need to have the following to use the prorgram
 
 1.  Python 3.x
-2.  Python libraries: `google-cloud-texttospeech`, `python-pptx`
+2.  Python libraries: [`google-cloud-texttospeech`](https://googleapis.dev/python/texttospeech/latest/index.html), [`python-pptx`](https://pypi.org/project/python-pptx/)
 3.  A service account credential to access a project hosted in Google Cloud that with Google Cloud Text-to-Speech API enabled
 4.  Set environment variable `GOOGLE_APPLICATION_CREDENTIALS` which points to a JSON file for that service account credential
 
