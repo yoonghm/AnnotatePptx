@@ -150,7 +150,7 @@ if __name__ == '__main__':
     parser.add_argument('output_pptx', type=str, help='Output PowerPoint file')
     parser.add_argument('--gender', nargs='?', default='female', help='Gender (default: female)')
     parser.add_argument('--lang',   nargs='?', default='en-GB',  help='Language (default: en-GB)')
-    parser.add_argument('--speed',  nargs='?', default=1.0,      help='Speed (default 1.0)', type=float)
+    parser.add_argument('--speed',  nargs='?', default=1.0,      help='Speed (default: 1.0)', type=float)
 
     args = parser.parse_args()
     print(args.gender, args.lang, args.speed)
