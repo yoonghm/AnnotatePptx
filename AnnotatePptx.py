@@ -145,7 +145,7 @@ class Powerpoint:
 import argparse
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Text to Speech')
+    parser = argparse.ArgumentParser(description='Voice annotate PowerPoint file')
     parser.add_argument('source_pptx', type=str, help='Input PowerPoint file')
     parser.add_argument('output_pptx', type=str, help='Output PowerPoint file')
     parser.add_argument('--gender', nargs='?', default='female', help='Gender (default: female)')
