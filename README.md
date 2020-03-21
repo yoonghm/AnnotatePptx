@@ -18,7 +18,7 @@ usage: AnnotatePptx.py [-h] [--gender [GENDER]] [--lang [LANG]]
                        [--speed [SPEED]]
                        source_pptx output_pptx
 
-Text to Speech
+Voice annotate PowerPoint file
 
 positional arguments:
   source_pptx        Input PowerPoint file
