@@ -38,3 +38,7 @@ If all the requirements are meet, you could try out the script with the PowerPoi
 ```bash
 python AnnotatePptx.py Zero-to-Python.pptx Zero-to-Python-1.pptx --gender male --lang en-US --speed 0.95
 ```
+
+## References:
+1.  "Generate voice annotated PowerPoint Slides from Speaker Notes", https://medium.com/@yoonghm/generate-voice-annotated-powerpoint-slides-from-speaker-notes-82e2cd45eb27
+2.  "Google.Cloud.TextToSpeech.V1", https://googleapis.github.io/google-cloud-dotnet/docs/Google.Cloud.TextToSpeech.V1/index.html
