@@ -21,7 +21,7 @@
 # SOFTWARE.
 
 # AnnotatePptx.py
-# Version 1.0
+# Version 1.1
 #
 
 from google.cloud import texttospeech as tts
@@ -47,7 +47,7 @@ class TextToSpeech:
         elif gender == 'female':
             sex = tts.enums.SsmlVoiceGender.FEMALE
         else:
-            sex == 'neutral'
+            sex = 'neutral'
 
         self.__client = tts.TextToSpeechClient()
 
@@ -67,9 +67,9 @@ class TextToSpeech:
 
         input = tts.types.SynthesisInput(text=text)
         response = self.__client.synthesize_speech(
-            input,
-            self.__voice,
-            self.__audio_config
+            input=input,
+            voice=self.__voice,
+            audio_config=self.__audio_config
         )
         with open(output, 'wb') as out:
             out.write(response.audio_content)
